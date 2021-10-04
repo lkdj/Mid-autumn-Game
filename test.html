@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中秋博饼</title>
+    <style type="text/css">
+        *{
+            margin: 2mm;
+            padding: 2mm;
+        }
+
+        /*<!-----------------------主界面------------------->*/
+        .main{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: block;
+        }
+        .main .btn button{
+            width: 100mm;
+            height: 25mm;
+            position: absolute;
+            left: 42%;
+            background-color: rgba(137, 101, 222, 0.36);
+            border-radius: 10mm;
+            border: rgba(138, 43, 226, 0.66);
+            outline: chocolate;
+            font-size: 50px;
+            font-family: 楷体;
+        }
+        #start{
+            top: 50%;
+        }
+        #rule{
+            top: 65%;
+        }
+
+        /*<!----------------------设置人数界面--------------------->*/
+        .setNum{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: none;
+        }
+        .setNum .elements button{
+            width: 100mm;
+            height: 25mm;
+            left: 42%;
+            position: absolute;
+            background-color: rgba(137, 101, 222, 0.36);
+            border-radius: 10mm;
+            border: rgba(138, 43, 226, 0.66);
+            outline: chocolate;
+            font-size: 50px;
+            font-family: 楷体;
+        }
+        .setNum .elements input{
+            width: 200mm;
+            height: 25mm;
+            position: absolute;
+            top: 45%;
+            left: 33%;
+            background-color: rgba(0, 72, 255, 0.36);
+            border-radius: 10mm;
+            border: rgba(138, 43, 226, 0.66);
+            outline: chocolate;
+            font-family: 楷体;
+            font-size: 50px;
+            text-align: center;
+        }
+        #enter{
+            top: 60%;
+        }
+        #clear{
+            top: 70%;
+        }
+
+        /*---------------------------游戏进行界面----------------------------*/
+
+    </style>
+    <script src="../JS/test.js"></script>
+
+</head>
+<body>
+
+<div class="main" >
+    <img src="../source/主界面背景.png" />
+    <div class="btn">
+        <button id="start">开始游戏</button>
+        <button id="rule">游戏规则</button>
+    </div>
+</div>
+
+<div class="setNum">
+    <img src="../source/主界面背景.png" />
+    <div class="elements">
+        <input type="text" id="number" value="" placeholder="请输入玩家人数(<12人)"/>
+        <button id="enter">开始游戏</button>
+        <button id="clear">清除数据</button>
+    </div>
+</div>
+
+<div class="play">
+
+</div>
+
+<div class="result">
+    <img src="../source/结算背景.png" />
+    <p id="background" ></p>
+    <p id="gameover" >游戏结束</p>
+    <button id="again">再来一局!</button>
+    <button id="back"/>退出房间</button>
+    <div id="player">
+        <p id="p01"></p>
+        <p id="p02"></p>
+        <p id="p03"></p>
+        <p id="p04"></p>
+        <p id="p05"></p>
+        <p id="p06"></p>
+        <p id="p07"></p>
+        <p id="p08"></p>
+        <p id="p09"></p>
+        <p id="p10"></p>
+        <p id="p11"></p>
+        <p id="p12"></p>
+    </div>
+
+</div>
+
+<div class="rules" >
+
+</div>
+
+</body>
+</html>
