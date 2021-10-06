@@ -10,23 +10,22 @@
         }
 
         /*<!-----------------------主界面------------------->*/
-        .main{
+        .mainPage{
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
             display: block;
         }
-        .main .btn button{
+        .mainPage .btn button{
             width: 100mm;
             height: 25mm;
             position: absolute;
             left: 42%;
-            background-color: rgba(137, 101, 222, 0.36);
+            background-color: rgba(105, 101, 222, 0.36);
             border-radius: 10mm;
-            border: rgba(138, 43, 226, 0.66);
-            outline: chocolate;
             font-size: 50px;
+            font-weight: bold;
             font-family: 楷体;
         }
         #start{
@@ -36,27 +35,54 @@
             top: 65%;
         }
 
-        /*<!----------------------设置人数界面--------------------->*/
-        .setNum{
+        /*-------------------------规则界面-------------------------*/
+        .rulesPage{
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
             display: none;
         }
-        .setNum .elements button{
+        #myRule{
+            position: absolute;
+            left: 50%;
+            top: 49%;
+            transform: translate(-50%,-50%);
+            display: block;
+        }
+        #ret{
+            width: 50mm;
+            height: 20mm;
+            position: absolute;
+            background-color: #a075dc;
+            border-radius: 5mm;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 楷体;
+            top: 5%;
+            left: 3.2%;
+        }
+
+        /*<!----------------------设置人数界面--------------------->*/
+        .setNumPage{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: none;
+        }
+        .setNumPage .elements button{
             width: 100mm;
             height: 25mm;
             left: 42%;
             position: absolute;
             background-color: rgba(137, 101, 222, 0.36);
             border-radius: 10mm;
-            border: rgba(138, 43, 226, 0.66);
-            outline: chocolate;
             font-size: 50px;
+            font-weight: bold;
             font-family: 楷体;
         }
-        .setNum .elements input{
+        .setNumPage .elements input{
             width: 200mm;
             height: 25mm;
             position: absolute;
@@ -64,11 +90,23 @@
             left: 33%;
             background-color: rgba(0, 72, 255, 0.36);
             border-radius: 10mm;
-            border: rgba(138, 43, 226, 0.66);
-            outline: chocolate;
             font-family: 楷体;
             font-size: 50px;
             text-align: center;
+            font-weight: bold;
+            border:7px solid rgba(69, 252, 179, 0.69);
+        }
+        #backToMain{
+            width: 50mm;
+            height: 20mm;
+            position: absolute;
+            background-color: #a075dc;
+            border-radius: 5mm;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 楷体;
+            top: 5%;
+            left: 3.2%;
         }
         #enter{
             top: 60%;
@@ -78,6 +116,305 @@
         }
 
         /*---------------------------游戏进行界面----------------------------*/
+        .playPage{
+            display: none;
+        }
+        #playBackground{            /*界面背景*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        #playerBG{                  /*玩家列表底色*/
+            position: absolute;
+            left: 16%;
+            top: 17%;
+        }
+
+        #backToSet{                  /*返回*/
+            position: absolute;
+            left: 22%;
+            top: 6%;
+        }
+        #sheep{                       /*羊*/
+            position: absolute;
+            left: 67%;
+            top: 32%;
+        }
+        .playerInRoom p{
+            width: 130mm;
+            height: 11mm;
+            background-color: rgba(185, 190, 238, 0.45);
+            border-radius: 5mm;
+            font-size: 40px;
+            font-weight: bold;
+            font-family: 楷体;
+            position: absolute;
+            left: 24%;
+            text-align: center;
+        }
+
+        #menber{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 楷体;
+            position: absolute;
+            left: 28.5%;
+            top: 23%;
+        }
+        #player1{
+            top: 30%;
+        }
+        #player2{
+            top: 34%;
+        }
+        #player3{
+            top: 38%;
+        }
+        #player4{
+            top: 42%;
+        }
+        #player5{
+            top: 46%;
+        }
+        #player6{
+            top: 50%;
+        }
+        #player7{
+            top: 54%;
+        }
+        #player8{
+            top: 58%;
+        }
+        #player9{
+            top: 62%;
+        }
+        #player10{
+            top: 66%;
+        }
+        #player11{
+            top: 70%;
+        }
+        #player12{
+            top: 74%;
+        }
+        .playPage .waiting{                         /*等待时组件*/
+            display: block;
+        }
+        #bowlF{                        /*碗*/
+            position: absolute;
+            left: 52%;
+            top: 42%;
+        }
+        .dices{              /*骰子*/
+            position: absolute;
+            left: 50%;
+            top: 65%;
+        }
+        #goToPlay{
+            position: absolute;
+            left: 68%;
+            top: 10%;
+        }
+
+        .playPage .playing{                         /*进行时组件*/
+            display: none;
+        }
+        #state{
+            width: 60mm;
+            height: 12mm;
+            position: absolute;
+            top: 19%;
+            left: 68.2%;
+            background-color: rgba(0, 72, 255, 0.36);
+            border-radius: 2mm;
+            font-family: 楷体;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        #who{
+            width: 80mm;
+            height: 15mm;
+            position: absolute;
+            top: 25%;
+            left: 67%;
+            background-color: rgba(0, 72, 255, 0.36);
+            border-radius: 5mm;
+            font-family: 楷体;
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        #clickToPlay{
+            font-family: 楷体;
+            font-weight: bold;
+            font-size: 40px;
+            color: #ffffff;
+            position: absolute;
+            background-color: rgb(232, 53, 29);
+            border-radius: 5mm;
+            top: 74%;
+            left: 58.3%;
+        }
+
+        .afterRoll{               /*摇后*/
+            display: none;
+        }
+        #bowlU{
+            position: absolute;
+            top: 25%;
+            left: 45%;
+        }
+        #nextPlayer{
+            position: absolute;
+            width: 84mm;
+            height: 42mm;
+            top: 19%;
+            left: 67%;
+            background-color: rgb(95, 236, 163);
+            border-radius: 5mm;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        #showResult{
+            position: absolute;
+            top: 34%;
+            left: 49%;
+            width: 100mm;
+            height: 15mm;
+            background-color: rgba(243, 175, 123, 0.96);
+            border-radius: 5mm;
+            font-family: 楷体;
+            text-align: center;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        #d01{
+            position: absolute;
+            top: 45%;
+            left: 56%;
+        }
+        #d02{
+            position: absolute;
+            top: 42%;
+            left: 60%;
+        }
+        #d03{
+            position: absolute;
+            top: 44%;
+            left: 64%;
+        }
+        #d04{
+            position: absolute;
+            top: 55%;
+            left: 56%;
+        }
+        #d05{
+            position: absolute;
+            top: 58%;
+            left: 60%;
+        }
+        #d06{
+            position: absolute;
+            top: 56%;
+            left: 64%;
+        }
+
+        /*-----------------------------结算界面-----------------------------*/
+        .resultPage {
+            position: absolute;
+            left: 50%;
+            top: 52%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+        #background{
+            width: 360mm;
+            height: 260mm;
+            margin: 15mm;
+            position: absolute;
+            top: 7%;
+            left: 17%;
+            background-color: rgba(0, 255, 144, 0.36);
+            border-radius: 10mm;
+            font-size: xx-large;
+        }
+        #gameover{
+            position: absolute;
+            top: 11%;
+            left: 45%;
+            font-size: 50px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .resultPage .btn button{
+            width: 50mm;
+            height: 20mm;
+            position: absolute;
+            background-color: #0370f6;
+            border-radius: 5mm;
+            font-size: xx-large;
+            color: azure;
+            font-weight: bold;
+        }
+        #again{
+            top: 70%;
+            left: 39%;
+        }
+        #back{
+            top: 70%;
+            left: 54%;
+        }
+        .player p{
+            width: 302mm;
+            height: 11mm;
+            position: absolute;
+            background-color: rgba(206, 238, 223, 0.73);
+            border-radius: 5mm;
+            font-size: 35px;
+            font-family: 楷体;
+            font-weight: bold;
+            text-align: center;
+            left: 24%;
+        }
+        #p1{
+            top: 18%;
+        }
+        #p2{
+            top: 22%;
+        }
+        #p3{
+            top: 26%;
+        }
+        #p4{
+            top: 30%;
+        }
+        #p5{
+            top: 34%;
+        }
+        #p6{
+            top: 38%;
+        }
+        #p7{
+            top: 42%;
+        }
+        #p8{
+            top: 46%;
+        }
+        #p9{
+            top: 50%;
+        }
+        #p10{
+            top: 54%;
+        }
+        #p11{
+            top: 58%;
+        }
+        #p12{
+            top: 62%;
+        }
+
 
     </style>
     <script src="../JS/test.js"></script>
@@ -85,7 +422,7 @@
 </head>
 <body>
 
-<div class="main" >
+<div class="mainPage" >
     <img src="../source/主界面背景.png" />
     <div class="btn">
         <button id="start">开始游戏</button>
@@ -93,35 +430,104 @@
     </div>
 </div>
 
-<div class="setNum">
+<div class="setNumPage">
     <img src="../source/主界面背景.png" />
     <div class="elements">
         <input type="text" id="number" value="" placeholder="请输入玩家人数(<12人)"/>
         <button id="enter">开始游戏</button>
         <button id="clear">清除数据</button>
+        <button id="backToMain">返回</button>
     </div>
 </div>
 
-<div class="play">
+<div class="playPage">
+    <img id="playBackground" src="../source/游戏背景.jpg"/>
+    <img id="playerBG" src="../source/成员背景.png" height="1031*0.7" width="930*0.7"/>
+    <img id="sheep" src="../source/羊.png" height="266" width="344"/>
+    <img id="backToSet" src="../source/返回.png" height="182" width="221"/>
+
+    <p id="menber">房间成员</p>
+
+    <div class="playerInRoom">
+        <p id="player1">玩家1</p>
+        <p id="player2">玩家2</p>
+        <p id="player3">玩家3</p>
+        <p id="player4">玩家4</p>
+        <p id="player5">玩家5</p>
+        <p id="player6">玩家6</p>
+        <p id="player7">玩家7</p>
+        <p id="player8">玩家8</p>
+        <p id="player9">玩家9</p>
+        <p id="player10">玩家10</p>
+        <p id="player11">玩家11</p>
+        <p id="player12">玩家12</p>
+    </div>
+
+    <!--  碗  -->
+    <img id="bowlF" src="../source/碗正.png" height="339" width="550"/>
+
+    <!--骰子-->
+    <div class="dices">
+        <img src="../source/1.png" height="80" width="80"/>
+        <img src="../source/2.png" height="80" width="80"/>
+        <img src="../source/3.png" height="85" width="85"/>
+        <img src="../source/4.png" height="80" width="80"/>
+        <img src="../source/5.png" height="80" width="80"/>
+        <img src="../source/6.png" height="80" width="80"/>
+    </div>
+
+<!--  等待界面  -->
+    <div class="waiting">
+        <!--    开始按钮    -->
+        <img  id="goToPlay" src="../source/开始.png" height="250" width="250"/>
+    </div>
+<!--  游戏进行  -->
+    <div class="playing">
+            <p id="state">现在轮到</p>
+            <p id="who">大胃王汤姆树</p>           <!--当前玩家名-->
+            <button id="clickToPlay">投骰子！</button>
+        <div class="afterRoll">         <!--摇后-->
+        <!--   下一位按钮   -->
+            <button id="nextPlayer">下一位</button>
+
+        <!--  碗上  -->
+            <img id="bowlU" src="../source/碗上.png" height="867" width="954"/>
+
+        <!-- 骰子结果 -->
+            <img id="d01" src="../source/1.png" height="100" width="100"/>
+            <img id="d02" src="../source/2.png" height="100" width="100"/>
+            <img id="d03" src="../source/3.png" height="120" width="120"/>
+            <img id="d04" src="../source/4.png" height="100" width="100"/>
+            <img id="d05" src="../source/5.png" height="110" width="110"/>
+            <img id="d06" src="../source/6.png" height="100" width="100"/>
+
+        <!--标签提示结果-->
+            <p id="showResult">状元！</p>
+
+        </div>
+
+    </div>
 
 </div>
 
-<div class="result">
-    <img src="../source/结算背景.png" />
+<div class="resultPage">
+    <img src="../source/结算背景.png" height="1365" width="2184"/>
     <p id="background" ></p>
     <p id="gameover" >游戏结束</p>
-    <button id="again">再来一局!</button>
-    <button id="back"/>退出房间</button>
-    <div id="player">
-        <p id="p01"></p>
-        <p id="p02"></p>
-        <p id="p03"></p>
-        <p id="p04"></p>
-        <p id="p05"></p>
-        <p id="p06"></p>
-        <p id="p07"></p>
-        <p id="p08"></p>
-        <p id="p09"></p>
+    <div class="btn">
+        <button id="again">再来一局!</button>
+        <button id="back"/>退出房间</button>
+    </div>
+    <div class="player">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <p id="p6"></p>
+        <p id="p7"></p>
+        <p id="p8"></p>
+        <p id="p9"></p>
         <p id="p10"></p>
         <p id="p11"></p>
         <p id="p12"></p>
@@ -129,9 +535,10 @@
 
 </div>
 
-<div class="rules" >
-
+<div class="rulesPage" >
+    <img src="../source/规则界面背景.jpg" />
+    <img id="myRule" src="../source/规则.jpg" height="1327" width="1379"/>
+    <button id="ret">返回</button>
 </div>
-
 </body>
 </html>
