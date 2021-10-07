@@ -1,0 +1,140 @@
+/*<!-----------------------主界面------------------->*/
+.mainPage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+.mainPage .btn button{
+    width: 100mm;
+    height: 25mm;
+    position: absolute;
+    left: 42%;
+    background-color: rgba(105, 101, 222, 0.36);
+    border-radius: 10mm;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 楷体;
+}
+#start{
+    top: 50%;
+}
+#rule{
+    top: 65%;
+}
+#present{
+    top: 80%;
+}
+
+/*-------------------------规则界面-------------------------*/
+.rulesPage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+#myRule{
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+#ret{
+    width: 50mm;
+    height: 20mm;
+    position: absolute;
+    background-color: #a075dc;
+    border-radius: 5mm;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 楷体;
+    top: 5%;
+    left: 3.2%;
+}
+/*-------------------------礼物设置界面-------------------------*/
+.setPresentPage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+#backToMain2{
+    width: 50mm;
+    height: 20mm;
+    position: absolute;
+    background-color: #a075dc;
+    border-radius: 5mm;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 楷体;
+    top: 5%;
+    left: 3.2%;
+}
+
+/*<!----------------------设置人数界面--------------------->*/
+.setNumPage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+.setNumPage .elements button{
+    width: 100mm;
+    height: 25mm;
+    left: 42%;
+    position: absolute;
+    background-color: rgba(137, 101, 222, 0.36);
+    border-radius: 10mm;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 楷体;
+}
+.setNumPage .elements input{
+    width: 200mm;
+    height: 25mm;
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    background-color: rgba(0, 72, 255, 0.36);
+    border-radius: 10mm;
+    font-family: 楷体;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    border:7px solid rgba(69, 252, 179, 0.69);
+}
+#backToMain{
+    width: 50mm;
+    height: 20mm;
+    position: absolute;
+    background-color: #a075dc;
+    border-radius: 5mm;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 楷体;
+    top: 5%;
+    left: 3.2%;
+}
+#enter{
+    top: 60%;
+}
+#clear{
+    top: 70%;
+}
+
+/*---------------------------游戏进行界面----------------------------*/
+.playPage{
+    display: none;
+}
+
+#backToSet{                  /*返回*/
+    position: absolute;
+    left: 22%;
+    top: 6%;
+}
